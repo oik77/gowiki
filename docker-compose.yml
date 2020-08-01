@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  mongo_svc:
+    container_name: mongo-dkr
+    image:  mongo:4-bionic
+    ports:
+    - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: secret
